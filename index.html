@@ -1,10 +1,11 @@
 <html>
   <style>
     body {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
     a {
       background-color: blue;
@@ -19,30 +20,51 @@
       border: red;
     }
     div {
-      display: grid;
+      /* display: grid; */
       justify-content: center;
       align-items: center;
       padding: 20px;
-      width: 60%;
-      height: auto;
+      width: 80%;
       text-align: center;
       border-radius: 10px;
-      box-shadow: 0px 0px 10px 10px gray;
+      box-shadow: 0px 0px 10px 10px rgba(66,71,93,0.392);
     }
-    img {
-      border: 2px solid blue;
+    img.pass {
       height: auto;
-      width: 100%;
+      width: 70%;
+      margin-bottom: 20px;
+      border: 2px solid blue;
+    }
+    img.tic {
+      width: 70%;
+      margin-bottom: 20px;
+      border: 2px solid blue;
     }
     label {
      
     }
+    div.contain {
+      box-shadow: 0px 0px 0px 0px rgb(247, 239, 239);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 20%;
+    }
   </style>
   <body>
-  <div>
-    <img src="desktop11.png" alt="image"><br>
-    <label>Simple password manager</label><br>
-    <a href="SecureKey.exe" download>Download SecureKey</a><br>
-  </div>
+    <div class="contain">
+      <div>
+        <img class="pass" src="desktop11.png" alt="image"><br>
+        <label>Simple password manager</label><br><br>
+        <a href="SecureKey.exe" download>Download SecureKey</a><br>
+      </div><br><br><br>
+      <div>
+        <img class="tic" src="tictactoe.PNG" alt="image"><br>
+        <label>Simple password manager</label><br><br>
+        <a href="Tictactoe.exe" download>Download Tic tac toe</a><br>
+      </div>
+    </div>
   </body>
 </html>
